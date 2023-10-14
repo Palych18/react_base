@@ -1,2 +1,2 @@
 # react_base
-React example
+React example, learning sandbox React
