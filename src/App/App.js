@@ -1,15 +1,11 @@
 import './App.css';
-import { Counter } from '../Counter';
+import { Posts } from '../Posts';
 
 export const App = () => {
   return (
     <div className="App">
       <h1>App</h1>
-      <Counter
-        min={10}
-        max={30}
-        defaultCount={20}
-      />
+      <Posts />
     </div>
   );
 };
