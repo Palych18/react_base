@@ -1,7 +1,4 @@
 .posts {
-  border: 4px dashed red;
-}
-
-.post {
-  border: 4px dashed green;
+  margin: 0 auto;
+  width: 900px;
 }
