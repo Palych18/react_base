@@ -1,6 +1,7 @@
 .users {
-  margin: 0 auto;
+  margin-left: 0;
   padding-top: 20px;
+  border-left: 1px solid #059100;
 }
 
 .users-title {

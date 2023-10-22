@@ -32,7 +32,7 @@ export const Users = ({className}) => {
   return (
     <div className={classNames}>
       <h2 className="users-title">Users</h2>
-      {users.length > 0 && users.map((user) => (
+      {users.map((user) => (
         <User className="users-user"
           key={user.id}
           details={user}

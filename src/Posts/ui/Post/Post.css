@@ -2,11 +2,11 @@
   padding: 20px 20px 0;
 }
 
-.title {
+.post_title {
   color: #059100;
 }
 
-.copy {
+.post_copy {
   font-size: 18px;
   text-align: left;
 }

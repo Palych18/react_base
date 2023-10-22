@@ -1,12 +1,25 @@
 import './Posts.css';
-import { Post } from '../Post';
+import { Post } from './ui/Post';
 import { useState, useEffect } from 'react';
 
-/** @typedef {import('./types').Post} PostType */
+/** 
+ * @typedef {import('./types').PostDetails} PostDetails
+ * @typedef {import('./types').PostsProps} PostsProps
+ */
 
-export const Posts = () => {
-  /** @type {[Post[] | [], Function]} */
+/**
+ * @function Posts
+ * @param {PostsProps} props
+ * @returns {JSX.Element}
+ */
+
+export const Posts = ({className}) => {
+  /** @type {[PostDetails[] | [], Function]} */
   const [posts, setPosts] = useState([]);
+
+  const classNames = className
+    ? `posts ${className}`
+    : 'posts';
   
   useEffect(() => {
     (async () => {
@@ -17,13 +30,11 @@ export const Posts = () => {
   }, []);
 
   return (
-    <div className="posts">
-      {posts.length > 0 && posts.map((post) => (
+    <div className={classNames}>
+      {posts?.map((post) => (
         <Post
           key={post.id}
-          id={post.id}
-          title={post.title}
-          content={post.content}
+          details={post}
         />
       ))}
     </div>

@@ -6,6 +6,7 @@ export type PostDetails = {
   category: string;
 };
 
-export type PostsProps = {
+export type PostProps = {
   className?: string;
+  details: PostDetails;
 };
