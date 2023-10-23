@@ -1,0 +1,10 @@
+.comments {
+  margin-left: 0;
+  width: 350px;
+  border-left: 1px solid #059100;
+}
+
+.comments-title {
+  margin-top: 40px;
+  color: #059100;
+}

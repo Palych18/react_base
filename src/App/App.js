@@ -1,6 +1,7 @@
 import './App.css';
-import { Posts } from '../Posts';
+import { Posts } from 'Posts';
 import { Users } from 'Users';
+import { Comments } from 'Comments';
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       <div className="content">
         <Posts />
         <Users />
+        <Comments />
       </div>      
     </div>
   );
