@@ -1,6 +1,9 @@
 import './User.css';
+import { getClassNames } from '../../../utils';
 
-/** @typedef {import('./types').UserProps} UserProps */
+/**
+ * @typedef {import('./types').UserProps} UserProps
+ */
 
 /**
  * @function User
@@ -8,14 +11,16 @@ import './User.css';
  * @returns {JSX.Element}
  */
 
-export const User = ({className, details}) => {
+export const User = ({ className, details }) => {
   const address = details.address
     ? `${details.address.city} ${details.address.street}`
     : '';
 
-  const classNames = className
-    ? `user ${className}`
-    : 'user';
+  // const classNames1 = className
+  //   ? `user ${className}`
+  //   : 'user';
+
+  const classNames = getClassNames('user', {}, [className]);
 
   return (
     <div className={classNames}>

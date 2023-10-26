@@ -2,7 +2,7 @@ import './Users.css';
 import { User } from './ui/User';
 import { useState, useEffect } from 'react';
 
-/** 
+/**
  * @typedef {import('./types').UsersProps} UsersProps
  * @typedef {import('./types').UserDetails} UserDetails
  */
@@ -10,10 +10,10 @@ import { useState, useEffect } from 'react';
 /**
  * @function Users
  * @param {UsersProps} props
- * @returns {JSX.Element} 
+ * @returns {JSX.Element}
  */
 
-export const Users = ({className}) => {
+export const Users = ({ className }) => {
   /** @type {[UserDetails[] | [], Function]} */
   const [users, setUsers] = useState([]);
 
