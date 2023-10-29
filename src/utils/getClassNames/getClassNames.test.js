@@ -21,7 +21,7 @@ const dataForTests = {
     args: {
       baseClassName: 'one',
     },
-    expectedClassNames: 'one ',
+    expectedClassNames: 'one',
   },
 };
 
