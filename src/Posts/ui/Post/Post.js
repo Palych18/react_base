@@ -8,7 +8,7 @@ import './Post.css';
  * @returns {JSX.Element}
  */
 
-export const Post = ({details}) => {
+export const Post = ({ details }) => {
 
   return (
     <div className="post">

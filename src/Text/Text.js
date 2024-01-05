@@ -1,3 +1,13 @@
+/**
+ * @typedef {import('./types').TextProps} TextProps
+ */
+
+/**
+ * @function Text
+ * @param {TextProps} props
+ * @returns
+ */
+
 export const Text = (props) => {
   return (
     <p className={props.className}>
@@ -5,9 +15,3 @@ export const Text = (props) => {
     </p>
   );
 };
-
-/*
-  <Text className="text">
-    Children example
-  </Text>
-*/

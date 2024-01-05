@@ -2,7 +2,7 @@ import './Posts.css';
 import { Post } from './ui/Post';
 import { useState, useEffect } from 'react';
 
-/** 
+/**
  * @typedef {import('./types').PostDetails} PostDetails
  * @typedef {import('./types').PostsProps} PostsProps
  */
@@ -13,19 +13,19 @@ import { useState, useEffect } from 'react';
  * @returns {JSX.Element}
  */
 
-export const Posts = ({className}) => {
+export const Posts = ({ className }) => {
   /** @type {[PostDetails[] | [], Function]} */
   const [posts, setPosts] = useState([]);
 
   const classNames = className
     ? `posts ${className}`
     : 'posts';
-  
+
   useEffect(() => {
     (async () => {
       const response = await fetch('https://jsonplaceholder.org/posts');
       const posts = await response.json();
-      setPosts(posts)
+      setPosts(posts);
     })();
   }, []);
 
